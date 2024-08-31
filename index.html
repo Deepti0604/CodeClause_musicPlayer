@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/255269bd13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music_player">
+            <div class="music">
+                <!-- header -->
+                <div class="header">
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Now Playing</h2>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- song description -->
+                <div class="song_desc">
+                    <img src="./images/chleya.jpg" class="song_image">
+                    <p class="name">Song Title</p>
+                    <p class="artist">Artist Name</p>
+                </div>
+                <!-- player scroll controls -->
+                <div class="player_control">
+                    <!-- song timer representation -->
+                    <div class="timer">
+                        <span class="current_time">00:00</span>
+                        <span class="duration">03:54</span>
+                    </div>
+                    <!-- song duration slider -->
+                    <div class="slider">
+                        <input type="range" class="duration_slider" min="0" max="100" value="0">
+                    </div>
+                    <!-- song control buttons -->
+                    <div class="buttons">
+                        <button class="prev">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </button>
+                        <button class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <button class="next">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </button>
+                    </div>
+                    <!-- autoplay button for play all songs -->
+                    <button class="play_all">
+                        Play All<i class="fa-solid fa-rotate"></i>
+                    </button>
+                    <!-- volume controller -->
+                     <div class="volume">
+                        <span  id="volume-icon">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </span>
+                        <input type="range" id="volume" min="0" max="100" value="50">
+                        <p id="show_volume">50%</p>
+                     </div>
+                </div>
+            </div>
+            <!-- ssong playlist section -->
+            <div class="song_playlist">
+                <!-- playlist header -->
+                <div class="header playlist_header">
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Your Playlist</h2>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!-- playllist song names -->
+                <div class="playlist_songs">
+                    <div class="playlist">
+                        <!-- <span class="song-number">1.</span>
+                        <p class="song-name">Song one</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="music.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
